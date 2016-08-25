@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LeftMenuVC.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic,strong)LeftMenuVC *leftMenuVC;
 
 @end
 

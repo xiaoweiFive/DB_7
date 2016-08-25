@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ZZWTabBarController.h"
 
+
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
 
@@ -18,17 +19,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-//    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-//    navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
-//    splitViewController.delegate = self;
-    
+
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[ZZWTabBarController alloc] init];
-    self.window.backgroundColor = [UIColor whiteColor];
+    ZZWTabBarController *tab =  [[ZZWTabBarController alloc] init];
+    
+    _leftMenuVC = [[LeftMenuVC alloc]init];
+    //分屏控制器
+    MFSideMenuContainerViewController *sideMenuVC = [MFSideMenuContainerViewController containerWithCenterViewController:tab leftMenuViewController:_leftMenuVC rightMenuViewController:nil];
+    sideMenuVC.leftMenuWidth = 200 ;
+    self.window.rootViewController = sideMenuVC;
+    
     [self.window makeKeyAndVisible];
+    
     
     return YES;
 }

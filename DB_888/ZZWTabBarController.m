@@ -7,6 +7,9 @@
 //
 
 #import "ZZWTabBarController.h"
+#import "FirstViewController.h"
+#import "ZZWNavViewController.h"
+
 
 @interface ZZWTabBarController ()
 
@@ -21,13 +24,13 @@
 
 - (void)setupChildControllers
 {
-    [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"icon_menu_home_normal" andTabBarSelectImageName:@"icon_menu_home_press" rootViewControllerClass:[UIViewController class] rootViewControllerTitle:@"夺宝吧"];
+    [self setupChildNavigationControllerWithClass:[ZZWNavViewController class] tabBarImageName:@"icon_menu_home_normal" andTabBarSelectImageName:@"icon_menu_home_press" rootViewControllerClass:[FirstViewController class] rootViewControllerTitle:@"夺宝吧"];
     
-    [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"icon_menu_jiexiao_normal" andTabBarSelectImageName:@"icon_menu_jiexiao_press" rootViewControllerClass:[UIViewController class] rootViewControllerTitle:@"最新揭晓"];
+    [self setupChildNavigationControllerWithClass:[ZZWNavViewController class] tabBarImageName:@"icon_menu_jiexiao_normal" andTabBarSelectImageName:@"icon_menu_jiexiao_press" rootViewControllerClass:[UIViewController class] rootViewControllerTitle:@"最新揭晓"];
     
-    [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"icon_menu_buy_normal" andTabBarSelectImageName:@"icon_menu_buy_press"  rootViewControllerClass:[UIViewController class] rootViewControllerTitle:@"购物车"];
+    [self setupChildNavigationControllerWithClass:[ZZWNavViewController class] tabBarImageName:@"icon_menu_buy_normal" andTabBarSelectImageName:@"icon_menu_buy_press"  rootViewControllerClass:[UIViewController class] rootViewControllerTitle:@"购物车"];
     
-    [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"icon_menu_me_normal"  andTabBarSelectImageName:@"icon_menu_me_press" rootViewControllerClass:[UIViewController class] rootViewControllerTitle:@"我的夺宝"];
+    [self setupChildNavigationControllerWithClass:[ZZWNavViewController class] tabBarImageName:@"icon_menu_me_normal"  andTabBarSelectImageName:@"icon_menu_me_press" rootViewControllerClass:[UIViewController class] rootViewControllerTitle:@"我的夺宝"];
     
 }
 
@@ -36,6 +39,7 @@
     UIViewController *rootVC = [[rootViewControllerClass alloc] init];
     rootVC.title = title;
     UINavigationController *navVc = [[class  alloc] initWithRootViewController:rootVC];
+    
     navVc.tabBarItem.image = [UIImage imageNamed:name];
 
     // 如果是iOS7，不要渲染选中的图片

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LeftMenuVC.h"
 
 @interface ZZWTabBarController : UITabBarController
+
+@property (nonatomic,strong)LeftMenuVC *leftMenuVC;
 
 @end

@@ -11,6 +11,18 @@
 #define DB_888_pch
 
 
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "MFSideMenu.h"
+#import "AppDelegate.h"
+
+#import "UIBarButtonItem+myAdd.h"
+#import "UIImage+Image.h"
+
+#endif
+
 
 //常用宏定义·
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width

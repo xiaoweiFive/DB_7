@@ -1,0 +1,68 @@
+8
+
+dir
+2266
+http://cma@192.168.1.168:81/svn/yougou/iphone/branches/v1.1.34/iOS/%E5%A4%BA%E5%AE%9D%E5%90%A7/Src/LeftMenu/Models
+http://cma@192.168.1.168:81/svn/yougou
+
+
+
+2016-01-06T07:14:34.457781Z
+2255
+cma
+
+
+svn:special svn:externals svn:needs-lock
+
+SeachTextModel.h
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+dbae4bb53f47b4671abd1ae8d08b3dbd
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
+SeachTextModel.m
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+d91842815992e9245a6f29639501cfd0
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
+ClassicModel.h
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+5c9895e919726b80cd8c8a2fc7644519
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
+ClassicModel.m
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+d10a28ad55840c8ea1918122b3200451
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+

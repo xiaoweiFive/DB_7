@@ -1,0 +1,90 @@
+8
+
+dir
+2266
+http://cma@192.168.1.168:81/svn/yougou/iphone/branches/v1.1.34/iOS/%E5%A4%BA%E5%AE%9D%E5%90%A7/Src/LeftMenu
+http://cma@192.168.1.168:81/svn/yougou
+
+
+
+2016-01-06T07:14:34.457781Z
+2255
+cma
+
+
+svn:special svn:externals svn:needs-lock
+
+ClassicCell.xib
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+bafa58fd7f5ee0c9a4d00b5a0535ec36
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
+LeftMenuVC.m
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+cf3def9d3b23463d383d5b4414874205
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
+Models
+dir
+
+Seach
+dir
+
+MenuImgs
+dir
+
+ClassicCell.h
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+224c8eccb90e783b89606e0077dd6539
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
+ClassicCell.m
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+0cb3aceb52b9490a3b1db5dcb7083f0d
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
+LeftMenuVC.h
+file
+
+
+
+
+2015-12-15T02:23:04.000000Z
+9bb351650536739d3f32d6e8efed6aae
+2016-01-06T07:14:34.457781Z
+2255
+cma
+has-props
+
