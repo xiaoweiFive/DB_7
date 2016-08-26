@@ -42,9 +42,9 @@
     [self.view addSubview:lab];
     //搜索按钮
     UIButton *seachBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    AppDelegate *app = [UIApplication sharedApplication].delegate;
-    seachBtn.frame = CGRectMake(15, 25, 230, 30);
-//    [seachBtn setImage:[UIImage imageNamed:@"icon_sidebar"] forState:UIControlStateNormal];
+
+    seachBtn.frame = CGRectMake(15, 25, 150, 30);
+
     seachBtn.layer.cornerRadius = 2;
     seachBtn.layer.masksToBounds = YES;
     seachBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -97,10 +97,8 @@
     
     [self.menuContainerViewController presentViewController:seachVC animated:YES completion:nil];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
 
 #pragma mark -- 表格代理函数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
