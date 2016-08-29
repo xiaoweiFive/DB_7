@@ -271,10 +271,13 @@
 -(void)updateLabelWhenPageChanged{
     
     //取出模型
-    PPTModel *pptModel = self.pptModels[_page];
+    if (self.pptModels.count >0 &&self.pptModels !=nil) {
+        PPTModel *pptModel = self.pptModels[_page];
+        
+        //更改文字
+        self.label.text = [NSString stringWithFormat:@"  %@",pptModel.title];
+    }
     
-    //更改文字
-    self.label.text = [NSString stringWithFormat:@"  %@",pptModel.title];
 }
 
 
