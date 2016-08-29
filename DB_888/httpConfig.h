@@ -22,5 +22,9 @@
 
 #define ZZW_AD_URL [NSString stringWithFormat:@"%@/api/ApiMisc/getSlides",BaseUrlPath]
 
+//商品详情
+#define ZZW_PUBLISH_URL [NSString stringWithFormat:@"%@/api/ApiGoods/getRevealList",BaseUrlPath]
+
+
 
 #endif /* httpConfig_h */
