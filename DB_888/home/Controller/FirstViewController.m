@@ -46,9 +46,12 @@
     [ZZWHttpTool post:ZZW_AD_URL parameters:nil httpToolSuccess:^(id json) {
 
         NSArray *dataArray = json[@"data"];
-        [self setBannerView:dataArray];
+        if (dataArray.count) {
+            [self setBannerView:dataArray];
+        }
 
         MYLog(@"json ===  %@",json);
+        
     } failure:^(NSError *error) {
         MYLog(@"error = == %@",error);
     }];
